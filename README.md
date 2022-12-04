@@ -4,3 +4,4 @@ This repository contains my solutions for the [Advent of VUE 2022](https://adven
 
 - Day1: Search products
 - Day2: Tell jokes 
+- Day3: Christmas countdown
