@@ -1,3 +1,5 @@
+const findProducts = async term => { }
+
 function App() {
   
   return (
