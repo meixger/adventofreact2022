@@ -1,6 +1,8 @@
 import { useState } from "react"
 
 function App() {
+  const [to, setTo] = useState();
+  const [from, setFrom] = useState();
 
   return (
     <div className="grid h-screen place-items-center">
@@ -11,8 +13,8 @@ function App() {
               <img src="/assets/santa.svg" alt="" className="max-w-[12em]" />
               <div>
                 <h1 className="font-serif text-4xl">Happy Holidays!</h1>
-                <div className="mt-4 bg-white text-black p-2 rounded">TO: TODO</div>
-                <div className="mt-2 bg-white text-black p-2 rounded">FROM: TODO</div>
+                <div className="mt-4 bg-white text-black p-2 rounded">TO: {to}</div>
+                <div className="mt-2 bg-white text-black p-2 rounded">FROM: {from}</div>
               </div>
             </div>
           </div>
@@ -21,12 +23,14 @@ function App() {
               To:
               <input
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2"
+                onChange={e => setTo(e.target.value)}
               />
             </label>
             <label className="mt-2 block">
               From:
               <input
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2"
+                onChange={e => setFrom(e.target.value)}
               />
             </label>
           </div>
