@@ -1,6 +1,7 @@
 {
   "language": "Deutsch",
   "happyHolidays": "Schöne Ferien!",
-  "christmasIsComing": "{ date } ist in { time }",
-  "day": "ein Tag | {count} Tagen"
+  "christmasIsComing": "{{ date, nicelongdate }} ist in <2>{{ time }}</2>",
+  "day_one": "einem Tag",
+  "day_other": "{{count}} Tagen"
 }
