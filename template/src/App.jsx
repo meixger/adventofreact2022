@@ -1,10 +1,7 @@
 function App() {
-  
   return (
-    <div className="container m-auto">
-      <h1 className="grid h-screen place-items-center">TODO</h1>
-    </div>
-  )
+    <h1 className="grid h-screen place-items-center">TODO</h1>
+  );
 }
 
-export default App
+export default App;
