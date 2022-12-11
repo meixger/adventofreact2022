@@ -7,7 +7,6 @@ configure({ testIdAttribute: "data-qa" });
 
 it("should sort presents from small to big by dimensions when toggling sort", async () => {
   render(<App />);
-  console.log(screen.logTestingPlaygroundURL());
 
   await fireEvent.click(
     await screen.findByRole("button", { name: "Toggle sort" })
